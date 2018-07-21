@@ -1,0 +1,54 @@
+{
+  "details":{
+    "image":"koala.jpg",
+    "name":"koala",
+    "phoneno":"9949747659",
+    "email":"lahariyogi99@gmail.com",
+    "address":"SRKR engg clg,bhimavaram"
+  },
+  "carrer":{
+    "info":"As a college student or recent graduate, you are likely looking for entry-level work or an internship"
+  },
+  "education":[{
+      "degree":"Btech",
+      "institute":"srkr",
+      "date":["20-07-2020","88%"]
+    },
+    {
+      "degree":"intermidiate",
+      "institute":"sasi",
+      "date":["2016","97%"]
+    },
+    {
+    "degree":"ssc",
+    "institute":"sasi",
+    "date":["12-07-2014","97%"]
+  }
+],
+  "keyskills":[
+    {
+    "title":"programming languages:",
+    "info":["c,c++,java,pyhton"]
+  },
+  {
+    "title":"operating systems",
+    "info":["windows,linux,ios"]
+  },
+  {
+    "title":"databases",
+    "info":["oracle,sql,mysql"]
+  }
+],
+  "achievements":[
+    {
+      "place":"srkr",
+      "sport":"running",
+      "medal":"gold"
+    },
+    {
+      "place":"vishnu",
+      "sport":"basketball",
+      "medal":"gold"
+    }
+  ]
+}
