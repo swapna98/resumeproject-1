@@ -1,17 +1,39 @@
-function loadJson(file,callback) {
-  var x = new  XMLHttpRequest();
-  x.overrideMimeType("application/json");
-  x.open("Get",file,true);
-  x.onreadystatechange=function(){
-    if(x.readyState === 4 && x.status == "200"){
-      callback(x.responseText);
-    }
-  };
-    x.send(null);
+// function loadJson(file,callback) {
+//   var x = new  XMLHttpRequest();
+//   x.overrideMimeType("application/json");
+//   x.open("Get",file,true);
+//   x.onreadystatechange=function(){
+//     if(x.readyState === 4 && x.status == "200"){
+//       callback(x.responseText);
+//     }
+//   };
+//     x.send(null);
+// }
+//
+// loadJson("data.json",function(text){
+//   var data = JSON.parse(text);
+  // console.log(data);
+  // basics(data.details);
+  // basics2(data.carrer);
+  // basics3(data.education);
+  // basics4(data.keyskills);
+  // basic(data.achievements);
+// })
+function loadjson(file)
+{
+  return new Promise((resolve,reject)=>{
+    return fetch(file).then(response=>{
+      if(response.ok){
+        resolve(response.json());
+      }else{
+        reject(new error('error'));
+      }
+    })
+  })
 }
-
-loadJson("data.json",function(text){
-  var data = JSON.parse(text);
+var file = loadjson("data.json");
+file.then(data=>
+{
   console.log(data);
   basics(data.details);
   basics2(data.carrer);
