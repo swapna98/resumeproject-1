@@ -1,0 +1,59 @@
+.parent{
+  display: flex;
+  width: 100%;
+  border: 2px solid ;
+}
+
+.left{
+  background-color: #9DCDEE;
+  width: 30%;
+  padding: 2%;
+  margin: 2%;
+  text-align: center;
+}
+
+.right{
+  background-color: #89A28C;
+  width: 70%;
+  padding: 2%;
+  margin: 2%;
+}
+img{
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow:8px 12px 18px black;
+}
+hr{
+  background-color: red;
+}
+
+#co{
+  color: blue;
+}
+
+#para{
+  font-size: 20px;
+}
+
+#edu{
+  color:blue;
+}
+
+#btech{
+  font-size: 20px;
+}
+
+#inter{
+  font-size: 20px;
+}
+
+#ssc{
+  font-size: 20px;
+}
+
+#tab{
+  font-size: 20px;
+}
